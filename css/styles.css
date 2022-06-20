@@ -1,0 +1,71 @@
+:root{
+    --blue-dark: #1A1A2E;
+    --blue-medium: #16213E;
+    --blue-light: #0F3460;
+    --pink: #E94560;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #444444;
+}
+
+*{
+    color: var(--gray);
+}
+
+.navbar-brand{
+    font-size: 1.5em;
+}
+
+.card{
+    border: none;
+}
+
+.card-title, .card-subtitle, .card h6{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+.card-title{
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-subtitle{
+    font-size: 0.9em;
+    color: var(--gray);
+}
+
+.card .precio::before{
+    content: '$';
+}
+
+.card .precio{
+    font-size: 1em;
+    color: var(--blue-light);
+    font-weight: bold;
+}
+
+th{
+    font-size: 0.85em;
+    font-weight: 600;
+    text-align: center;
+}
+
+td.portada img{
+    width: 48px;
+    margin: auto;
+}
+
+td.titulo, td.precio, td.cantidad {
+    font-size: 0.7em;
+    line-height: 1.25em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+td a{
+    content: url("../img/trash-black.svg");
+    width: 20px;
+}
