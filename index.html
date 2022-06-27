@@ -17,9 +17,10 @@
                 <div class="col-6">
                     <a class="navbar-brand" href="">Book || Store°</a>
                 </div>
-                <div class="col-6 align-self-center text-end">
-                    <a href="#carritoCompras" data-bs-toggle="offcanvas" role="button" aria-controls="carrito-compras">
+                <div class="col-6 align-self-center text-end ">
+                    <a href="#carritoCompras" data-bs-toggle="offcanvas" role="button" aria-controls="carrito-compras" class="position-relative">
                         <img src="./img/shopping-cart-black.svg" alt="Carrito de compras">
+                        <span id="cantidad-libros" class="position-absolute top-1 translate-middle badge rounded-pill bg-danger">0</span>
                     </a>
                 </div>
             </div>
@@ -28,12 +29,18 @@
 
     <main>
 
-        <section class="bg-warning my-5 py-5 banner container text-center">
+        <section class="bg-warning my-4 my-md-5 py-5 banner container text-center">
             <h1 class="display-2">Book || Store°</h1>
             <h2 class="lead">Encuentra todos tus libros</h2>
         </section>
 
-        <section class="container p-0 my-5">
+        <section id="filtro-categorias">
+            <button id="todos-generos" class="btn btn-sm btn-dark me-1">Todos</button> 
+        </section>
+
+        <h6 id="titulo-categoria" class="mt-4 mb-3"></h6>
+
+        <section class="container p-0">
             <div id="inventario" class="row gx-md-5">
             </div>
         </section>

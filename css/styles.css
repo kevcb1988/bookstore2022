@@ -37,10 +37,6 @@
     color: var(--gray);
 }
 
-.card .precio::before{
-    content: '$';
-}
-
 .card .precio{
     font-size: 1em;
     color: var(--blue-light);
@@ -68,4 +64,20 @@ td.titulo, td.precio, td.cantidad {
 td a{
     content: url("../img/trash-black.svg");
     width: 20px;
+}
+
+.modal-content{
+    padding: 1em 2em 0em;
+}
+
+.modal-title{
+    width: 95%;
+    line-height: 1.25em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.modal-body p{
+    font-size: 0.95em;
+    text-align: justify;
 }
