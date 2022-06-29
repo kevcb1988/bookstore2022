@@ -81,3 +81,8 @@ td a{
     font-size: 0.95em;
     text-align: justify;
 }
+
+.content-class{
+    font-size: 20em;
+    width: 300px;;
+}
