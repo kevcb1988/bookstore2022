@@ -54,7 +54,7 @@ const stockBooks = [
         titulo: "Harry Potter y las reliquías de la muerte",
         autor: 'J.K Rowling',
         precio: '45.000',
-        genero: "Fantasía no sirve"
+        genero: "Fantasía"
     },
     {
         id: 8,
