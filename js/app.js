@@ -189,7 +189,7 @@ function stockLibros(generoLibro = ""){
                     <!---<button class="detalle-libro btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#detalleLibro">
                        Ver detalle
                     </button> --->
-                    <button class="agregar-libro btn btn-sm btn-primary" data-id="${id}">
+                    <button class="agregar-libro btn  btn-primary" data-id="${id}">
                         Añadir al carrito
                     </button>
                 </div>
