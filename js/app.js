@@ -146,7 +146,7 @@ function mostrarGeneros(){
     const filtroCategorias = document.getElementById('filtro-categorias')
     generosLibros.forEach( libro => {
         const btnCategoria = document.createElement('button')
-        btnCategoria.classList.add('btn', 'btn-sm', 'btn-outline-secondary', 'me-2')
+        btnCategoria.classList.add('btn', 'btn-sm', 'btn-outline-secondary', 'me-2', 'mb-2')
         btnCategoria.innerText = libro.nombre
         
         btnCategoria.addEventListener('click', () => {
@@ -194,22 +194,6 @@ function stockLibros(generoLibro = ""){
                     </button>
                 </div>
             </div>
-
-            <div class="modal fade" id="detalleLibro" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title">${titulo}</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                    <p>${sinopsis}</p>
-                    <h6><small>Autor(a): ${autor}</small></h6>
-                    <h6 class="precio mt-3 mb-3">Precio: $ ${precio}</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
         `
         stockLibreria.appendChild(libroHTML)
         inventario.appendChild(stockLibreria)
