@@ -45,6 +45,7 @@ function agregarLibro(e){
     
         //Creamos y ejecutamos la función leerDatosLibro() y le pasamos por parámetro libroSeleccionado
         leerDatosLibro(libroSeleccionado)
+        notificacionCantidadLibros()
     }
 }
 
@@ -123,6 +124,8 @@ function eliminarLibro(e){
 
 function vaciarCarrito(){
 
+    cantidadLibrosAgregados = cantidadLibrosAgregados = 0
+    cantidadLibros.innerText = cantidadLibrosAgregados
     librosSeleccionados = []
     limpiarElementosCarrito()
     limpiarStorage()
@@ -209,6 +212,12 @@ function almacenarStorage(){
 
 function limpiarStorage(){
     localStorage.removeItem('carrito-compras')
+}
+
+//Notificación Cantidad
+function notificacionCantidadLibros(){
+    cantidadLibrosAgregados = cantidadLibrosAgregados += 1
+    cantidadLibros.innerText = cantidadLibrosAgregados
 }
 
 //Fetch

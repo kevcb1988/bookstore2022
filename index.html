@@ -24,6 +24,7 @@
                 <div class="col-6 align-self-center text-end ">
                     <a href="#carritoCompras" data-bs-toggle="offcanvas" role="button" aria-controls="carrito-compras" class="position-relative">
                         <img src="./img/shopping-cart-black.svg" alt="Carrito de compras">
+                        <span id="cantidad-libros" class="position-absolute top-1 translate-middle badge rounded-pill bg-danger">0</span>
                     </a>
                 </div>
             </div>
@@ -67,10 +68,10 @@
     <!-- Carrito de compras -->
     <div class="offcanvas offcanvas-end px-2" tabindex="-1" id="carritoCompras" aria-labelledby="carrito-compras">
         <div class="offcanvas-header" id="carrito-compras">
-            <h5 class="offcanvas-title" id="offcanvasLabel">
-                <img class="me-2" src="./img/shopping-cart-black.svg" alt="">
-                Carrito de Compras
-            </h5>
+            <a href="#carritoCompras" data-bs-toggle="offcanvas" role="button" aria-controls="carrito-compras" >
+                <img src="./img/shopping-cart-black.svg" alt="Carrito de compras">
+            </a>
+            <h6 class="pt-2">TUS LIBROS</h6>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div id="contenido-carrito-compras" class="offcanvas-body">
