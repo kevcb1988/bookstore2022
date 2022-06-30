@@ -1,5 +1,5 @@
 Swal.fire({
-    html: 'Por favor acepta nuestros <a href="#">terminos y condiciones</>',
+    html: 'Por favor acepta nuestros <a href="#">Términos & Condiciones<a/>',
     confirmButtonText: 'Acepto',
     icon: 'info',
     padding: '1rem',
