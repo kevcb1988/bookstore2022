@@ -149,7 +149,7 @@ function mostrarGeneros(){
     const filtroCategorias = document.getElementById('filtro-categorias')
     generosLibros.forEach( libro => {
         const btnCategoria = document.createElement('button')
-        btnCategoria.classList.add('btn', 'btn-sm', 'btn-outline-secondary', 'me-2')
+        btnCategoria.classList.add('btn', 'btn-sm', 'btn-outline-secondary', 'me-2', 'my-1')
         btnCategoria.innerText = libro.nombre
         
         btnCategoria.addEventListener('click', () => {
